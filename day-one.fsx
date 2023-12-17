@@ -1,15 +1,10 @@
+#load "utils.fs"
+open AdventOfCode2023
+open Utils
 open System
 open System.IO
-
 let isNumber (value: char): bool =
     Char.IsDigit(value)
-    
-
-let readLines (path: string) = seq {
-    use stream = new StreamReader(path)
-    while not stream.EndOfStream do
-        yield stream.ReadLine()
-}
 
 let getFirstAndLastNumber (value: string) =
     let numbers = Seq.toList value

@@ -6,9 +6,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Library.fs"/>
         <None Include="day-one.fsx" />
         <Content Include="day-one-input.txt" />
+        <None Include="collections-examples.fsx" />
+        <None Include="control-flow-example.fsx" />
+        <None Include="day-two.fsx" />
+        <Content Include="day-two-input.txt" />
+        <Compile Include="utils.fs" />
     </ItemGroup>
 
 </Project>
